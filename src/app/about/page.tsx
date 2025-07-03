@@ -7,14 +7,20 @@ export default function About() {
       <section className="relative py-24 bg-neutral-50 overflow-hidden">
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight fade-in-up">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight fade-in-up">
               Vision & Mission
             </h1>
             <p
-              className="text-xl text-neutral-600 mb-8 max-w-2xl mx-auto fade-in-up"
+              className="text-[min(4vw,1.25rem)] sm:text-xl text-neutral-600 mb-8 max-w-2xl mx-auto fade-in-up"
               style={{ animationDelay: "0.2s" }}
             >
-              テクノロジーの力で、ビジネスの可能性を広げ、より良い未来を創造することを使命としています。
+              テクノロジーの力で、
+              <br className="sm:hidden" />
+              ビジネスの可能性を広げ、
+              <br className="sm:hidden" />
+              より良い未来を創造することを
+              <br className="sm:hidden" />
+              使命としています。
             </p>
             <div
               className="w-24 h-1 bg-neutral-900 mx-auto rounded-full fade-in-up"
@@ -45,11 +51,23 @@ export default function About() {
               </div>
             </div>
             <div className="fade-in-right">
-              <h2 className="text-3xl font-bold mb-6">Our Mission</h2>
-              <p className="text-neutral-600 leading-relaxed mb-8">
-                クライアントの課題に寄り添い、最適なソリューションを提供することで、
-                デジタル時代における企業の成長を支援します。私たちは、技術とクリエイティビティを
-                融合させ、革新的なデジタルソリューションを生み出します。
+              <h2 className="text-2xl sm:text-3xl font-bold mb-6">
+                Our Mission
+              </h2>
+              <p className="text-neutral-600 leading-relaxed mb-8 text-[min(4vw,1rem)] sm:text-base">
+                クライアントの課題に寄り添い、
+                <br className="sm:hidden" />
+                最適なソリューションを提供することで、
+                <br className="sm:hidden" />
+                デジタル時代における
+                <br className="sm:hidden" />
+                企業の成長を支援します。
+                <br className="hidden sm:block" />
+                私たちは、技術とクリエイティビティを
+                <br className="sm:hidden" />
+                融合させ、革新的な
+                <br className="sm:hidden" />
+                デジタルソリューションを生み出します。
               </p>
               <div className="space-y-4">
                 {[
@@ -74,38 +92,59 @@ export default function About() {
       </section>
 
       {/* Services Section */}
-      <section className="py-20 bg-neutral-50">
+      <section className="py-20 bg-neutral-50 relative overflow-hidden">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-6">Our Services</h2>
-            <p className="text-neutral-600 max-w-2xl mx-auto">
-              最新のテクノロジーとクリエイティブなアプローチで、
+            <span className="inline-block text-sm font-medium text-neutral-500 tracking-wider uppercase mb-3">
+              Our Services
+            </span>
+            <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-gradient">
+              Services
+            </h2>
+            <p className="text-neutral-600 max-w-2xl mx-auto text-[min(4vw,1rem)] sm:text-base">
+              最新のテクノロジーと
+              <br className="sm:hidden" />
+              クリエイティブなアプローチで、
+              <br className="sm:hidden" />
               お客様のビジネスの成長を支援します。
             </p>
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-6 sm:gap-8">
             {services.map((service, index) => (
               <div
                 key={index}
-                className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 group fade-in-up"
+                className="card-3d p-6 sm:p-8 group fade-in-up bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300"
                 style={{ animationDelay: `${0.2 * (index + 1)}s` }}
               >
-                <div className="w-16 h-16 bg-neutral-900 text-white rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                  {service.icon}
+                <div className="card-3d-content flex flex-col items-center sm:items-start text-center sm:text-left">
+                  <div className="mb-6">
+                    <div
+                      className="w-16 h-16 rounded-2xl bg-neutral-900 text-white flex items-center justify-center mb-4 transition-transform group-hover:scale-110 animate-bounce-slow mx-auto sm:mx-0"
+                      style={{ animationDelay: `${0.1 * index}s` }}
+                    >
+                      <div className="w-8 h-8">{service.icon}</div>
+                    </div>
+                    <h3 className="heading-md mb-2 text-xl sm:text-2xl">
+                      {service.title}
+                    </h3>
+                  </div>
+                  <p className="text-body text-[min(4vw,1rem)] sm:text-base text-neutral-600">
+                    {service.description}
+                  </p>
                 </div>
-                <h3 className="text-xl font-bold mb-4">{service.title}</h3>
-                <p className="text-neutral-600">{service.description}</p>
               </div>
             ))}
           </div>
         </div>
+        <div className="absolute inset-0 animated-background opacity-30"></div>
+        <div className="absolute inset-0 animated-dots"></div>
       </section>
 
       {/* Company Info Section */}
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-4xl font-bold mb-12 text-center">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-12 text-center">
               Company Profile
             </h2>
             <div className="space-y-8">
@@ -131,7 +170,7 @@ export default function About() {
 
 const services = [
   {
-    title: "Webアプリケーション開発",
+    title: "Webアプリ開発",
     description:
       "モダンな技術スタックを活用し、スケーラブルで保守性の高いWebアプリケーションを開発します。",
     icon: (
@@ -211,6 +250,6 @@ const companyInfo = [
   },
   {
     label: "事業内容",
-    value: "Webアプリケーション開発、DX支援、Web制作",
+    value: "Webアプリ開発、DX支援、Web制作",
   },
 ];
