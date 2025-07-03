@@ -1,65 +1,79 @@
 import Image from "next/image";
 import Link from "next/link";
+import AnimatedText from "@/components/AnimatedText";
 
 export default function Home() {
   return (
     <div className="fade-in">
       {/* Hero Section */}
-      <section className="section relative overflow-hidden min-h-[600px] bg-neutral-50">
+      <section className="section relative overflow-hidden min-h-[80vh] flex items-center bg-neutral-50">
         <div className="container relative z-10">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="fade-in-left">
-              <h1 className="heading-xl mb-8">
-                アイデアを{" "}
-                <span className="text-gradient animate-pulse-slow">
-                  デジタルの世界へ
-                </span>
-              </h1>
-              <p
-                className="text-body text-lg mb-8 max-w-xl fade-in-up"
-                style={{ animationDelay: "0.2s" }}
-              >
-                Webアプリケーション開発からDX支援まで、ビジネスの成長をテクノロジーで加速します。
-                最新のテクノロジーと洗練されたデザインで、あなたのビジョンを実現します。
-              </p>
-              <div
-                className="flex flex-col sm:flex-row gap-4 fade-in-up"
-                style={{ animationDelay: "0.4s" }}
-              >
-                <Link href="/contact" className="btn-primary hover-scale">
-                  お問い合わせ
-                </Link>
-                <Link href="/works" className="btn-outline hover-scale">
-                  実績を見る
-                </Link>
-              </div>
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="mb-16">
+              <AnimatedText
+                text="Lumique"
+                baseDelay={8.2}
+                className="text-5xl md:text-7xl lg:text-8xl text-neutral-900 tracking-wider"
+                style={{
+                  fontFamily: "var(--font-noto-serif-jp)",
+                  fontWeight: "300",
+                  letterSpacing: "0.05em",
+                }}
+              />
             </div>
-            <div className="relative aspect-square w-[300px] fade-in-right flex items-center justify-end h-full ml-auto">
-              <div className="absolute inset-0 bg-neutral-300 rounded-2xl -rotate-12 transform transition-transform group-hover:rotate-3 animate-morph"></div>
-              <div
-                className="absolute inset-0 bg-neutral-200 rounded-2xl -rotate-6 transform transition-transform group-hover:-rotate-3 animate-morph"
-                style={{ animationDelay: "0.1s" }}
-              ></div>
-              <div
-                className="absolute inset-0 bg-white rounded-2xl rotate-0 transform transition-transform group-hover:rotate-1 animate-morph"
-                style={{ animationDelay: "0.2s" }}
-              >
-                <div className="relative gradient-border p-6 animate-float">
-                  <Image
-                    src="/logo.png"
-                    alt="Lumique Logo"
-                    width={250}
-                    height={250}
-                    className="w-full h-auto"
-                    priority
-                  />
-                </div>
-              </div>
+            <h2 className="heading-xl mb-8">
+              <AnimatedText
+                text="アイデアを"
+                baseDelay={1}
+                className="inline-block"
+                randomness={5.0}
+              />{" "}
+              <AnimatedText
+                text="デジタルの世界へ"
+                baseDelay={1.5}
+                className="inline-block"
+                letterClassName="text-gradient animate-pulse-slow"
+                randomness={5.0}
+              />
+            </h2>
+            <p className="text-body text-lg mb-12 max-w-2xl mx-auto">
+              <AnimatedText
+                text="Webアプリケーション開発からDX支援まで、ビジネスの成長をテクノロジーで加速します。"
+                baseDelay={2}
+                className="inline-block"
+                randomness={5.0}
+              />
+              <br />
+              <AnimatedText
+                text="最新のテクノロジーと洗練されたデザインで、あなたのビジョンを実現します。"
+                baseDelay={2.5}
+                className="inline-block"
+                randomness={5.0}
+              />
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link href="/contact" className="btn-primary hover-scale">
+                <AnimatedText
+                  text="お問い合わせ"
+                  baseDelay={3}
+                  className="inline-block"
+                  randomness={5.0}
+                />
+              </Link>
+              <Link href="/works" className="btn-outline hover-scale">
+                <AnimatedText
+                  text="実績を見る"
+                  baseDelay={3.2}
+                  className="inline-block"
+                  randomness={5.0}
+                />
+              </Link>
             </div>
           </div>
         </div>
-        <div className="absolute inset-0 animated-background opacity-50"></div>
-        <div className="absolute inset-0 animated-dots"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,#f5f5f5,transparent_70%)] opacity-70"></div>
+        <div className="absolute inset-0 animated-dots opacity-30"></div>
+        <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-white to-transparent"></div>
       </section>
 
       {/* Profile Section */}

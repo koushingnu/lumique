@@ -40,7 +40,7 @@ const Header = () => {
               alt="Lumique"
               width={100}
               height={24}
-              className="hidden sm:block transition-opacity group-hover:opacity-80"
+              className="transition-opacity group-hover:opacity-80"
               priority
             />
           </Link>
