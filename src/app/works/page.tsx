@@ -5,20 +5,20 @@ const works = [
     title: "アイドルLP",
     description: "周年イベント用LP。雰囲気に合わせて的確にデザインを作成。",
     image: "/works/work1.webp",
-    tags: ["Next.js", "TypeScript", "AWS"],
+    tags: ["Next.js", "TypeScript", "React", "Tailwind CSS"],
   },
   {
     title: "業務管理システム",
     description: "製造業向けの業務効率化システムを開発。工数を50%削減。",
     image: "/works/work2.png",
-    tags: ["React", "Node.js", "PostgreSQL"],
+    tags: ["React", "Node.js", "PostgreSQL", "AWS"],
   },
   {
     title: "コーポレートサイト制作",
     description:
       "スタートアップ企業のブランドイメージを体現するWebサイトを制作。",
-    image: "/works/work3.jpg",
-    tags: ["Next.js", "Tailwind CSS"],
+    image: "/works/work3.png",
+    tags: ["Next.js", "Tailwind CSS", "AWS", "React", "TypeScript"],
   },
 ];
 
