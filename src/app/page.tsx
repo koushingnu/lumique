@@ -12,7 +12,7 @@ export default function Home() {
             <div className="mb-12 sm:mb-16">
               <AnimatedText
                 text="Lumique"
-                baseDelay={8.2}
+                baseDelay={0.8}
                 className="text-7xl md:text-7xl lg:text-8xl text-neutral-900 tracking-wider"
                 style={{
                   fontFamily: "var(--font-noto-serif-jp)",
@@ -24,38 +24,38 @@ export default function Home() {
             <h2 className="heading-xl mb-6 sm:mb-8 jp-text">
               <AnimatedText
                 text="アイデアを"
-                baseDelay={1}
+                baseDelay={0.4}
                 className="inline-block"
-                randomness={5.0}
+                randomness={0.8}
               />{" "}
               <AnimatedText
                 text="デジタルの世界へ"
-                baseDelay={1.5}
+                baseDelay={0.4}
                 className="inline-block"
                 letterClassName="text-gradient animate-pulse-slow"
-                randomness={5.0}
+                randomness={0.8}
               />
             </h2>
             <p className="text-body mb-10 sm:mb-12 max-w-2xl mx-auto text-center text-[min(4vw,1.125rem)] sm:text-lg">
               <AnimatedText
                 text="Webアプリケーション開発からDX支援まで、"
-                baseDelay={2}
+                baseDelay={0.4}
                 className="inline-block"
-                randomness={5.0}
+                randomness={0.8}
               />
               <br className="my-2 sm:my-4" />
               <AnimatedText
                 text="ビジネスの成長をテクノロジーで加速します。"
-                baseDelay={2.5}
+                baseDelay={0.4}
                 className="inline-block"
-                randomness={5.0}
+                randomness={0.8}
               />
               <br className="my-2 sm:my-4" />
               <AnimatedText
                 text="最新のテクノロジーと洗練されたデザインで、あなたのビジョンを実現します。"
-                baseDelay={3}
+                baseDelay={0.4}
                 className="inline-block"
-                randomness={5.0}
+                randomness={0.8}
               />
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
@@ -65,9 +65,9 @@ export default function Home() {
               >
                 <AnimatedText
                   text="お問い合わせ"
-                  baseDelay={3}
+                  baseDelay={0.4}
                   className="inline-block"
-                  randomness={5.0}
+                  randomness={0.8}
                 />
               </Link>
               <Link
@@ -76,9 +76,9 @@ export default function Home() {
               >
                 <AnimatedText
                   text="実績を見る"
-                  baseDelay={3.2}
+                  baseDelay={0.4}
                   className="inline-block"
-                  randomness={5.0}
+                  randomness={0.8}
                 />
               </Link>
             </div>
