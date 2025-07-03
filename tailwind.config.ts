@@ -7,7 +7,12 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ["var(--font-inter)", "var(--font-noto-sans-jp)", "sans-serif"],
+        body: ["var(--font-noto-sans-jp)", "sans-serif"],
+      },
+    },
   },
   plugins: [],
 };

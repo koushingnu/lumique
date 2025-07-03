@@ -14,6 +14,7 @@
 @layer base {
   body {
     @apply bg-white text-neutral-900 antialiased selection:bg-neutral-900 selection:text-white;
+    font-family: var(--font-noto-sans-jp), sans-serif;
   }
 
   h1,
@@ -23,6 +24,7 @@
   h5,
   h6 {
     @apply font-sans tracking-tight;
+    font-family: var(--font-inter), var(--font-noto-sans-jp), sans-serif;
   }
 }
 
@@ -41,18 +43,22 @@
 
   .heading-xl {
     @apply text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight;
+    font-family: var(--font-inter), var(--font-noto-sans-jp), sans-serif;
   }
 
   .heading-lg {
     @apply text-3xl md:text-4xl font-bold leading-tight tracking-tight;
+    font-family: var(--font-inter), var(--font-noto-sans-jp), sans-serif;
   }
 
   .heading-md {
     @apply text-2xl md:text-3xl font-bold leading-tight;
+    font-family: var(--font-inter), var(--font-noto-sans-jp), sans-serif;
   }
 
   .text-body {
     @apply text-neutral-600 leading-relaxed;
+    font-family: var(--font-noto-sans-jp), sans-serif;
   }
 
   .text-gradient {
