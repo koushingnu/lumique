@@ -2,16 +2,15 @@ import Image from "next/image";
 
 const works = [
   {
-    title: "ECサイトリニューアル",
-    description:
-      "大手小売企業のECサイトを最新技術でリニューアル。売上30%増加を達成。",
-    image: "/works/work1.jpg",
+    title: "アイドルLP",
+    description: "周年イベント用LP。雰囲気に合わせて的確にデザインを作成。",
+    image: "/works/work1.webp",
     tags: ["Next.js", "TypeScript", "AWS"],
   },
   {
     title: "業務管理システム",
     description: "製造業向けの業務効率化システムを開発。工数を50%削減。",
-    image: "/works/work2.jpg",
+    image: "/works/work2.png",
     tags: ["React", "Node.js", "PostgreSQL"],
   },
   {

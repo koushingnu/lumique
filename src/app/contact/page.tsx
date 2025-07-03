@@ -11,10 +11,10 @@ export default function Contact() {
         </p>
 
         <Link
-          href="mailto:contact@lumique.com"
+          href="mailto:koushin1022apple@gmail.com"
           className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-black hover:bg-gray-800 transition-colors"
         >
-          contact@lumique.com
+          koushin1022apple@gmail.com
         </Link>
       </div>
     </div>

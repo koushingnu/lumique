@@ -18,10 +18,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="ja">
+    <html lang="ja" className="scroll-smooth">
       <body className={`${inter.className} min-h-screen flex flex-col`}>
         <Header />
-        <main className="flex-grow">{children}</main>
+        <main className="flex-grow pt-20">{children}</main>
         <Footer />
       </body>
     </html>
