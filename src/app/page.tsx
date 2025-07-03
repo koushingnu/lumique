@@ -13,7 +13,7 @@ export default function Home() {
               <AnimatedText
                 text="Lumique"
                 baseDelay={8.2}
-                className="text-5xl md:text-7xl lg:text-8xl text-neutral-900 tracking-wider"
+                className="text-7xl md:text-7xl lg:text-8xl text-neutral-900 tracking-wider"
                 style={{
                   fontFamily: "var(--font-noto-serif-jp)",
                   fontWeight: "300",
@@ -21,7 +21,7 @@ export default function Home() {
                 }}
               />
             </div>
-            <h2 className="heading-xl mb-8">
+            <h2 className="heading-xl mb-8 jp-text">
               <AnimatedText
                 text="アイデアを"
                 baseDelay={1}
@@ -36,17 +36,24 @@ export default function Home() {
                 randomness={5.0}
               />
             </h2>
-            <p className="text-body text-lg mb-12 max-w-2xl mx-auto">
+            <p className="text-body mb-12 max-w-2xl mx-auto text-center text-[2.5vw] sm:text-[1.8vw] md:text-[16px] lg:text-lg">
               <AnimatedText
-                text="Webアプリケーション開発からDX支援まで、ビジネスの成長をテクノロジーで加速します。"
+                text="Webアプリケーション開発からDX支援まで、"
                 baseDelay={2}
                 className="inline-block"
                 randomness={5.0}
               />
-              <br />
+              <br className="my-4" />
+              <AnimatedText
+                text="ビジネスの成長をテクノロジーで加速します。"
+                baseDelay={2.5}
+                className="inline-block"
+                randomness={5.0}
+              />
+              <br className="my-4" />
               <AnimatedText
                 text="最新のテクノロジーと洗練されたデザインで、あなたのビジョンを実現します。"
-                baseDelay={2.5}
+                baseDelay={3}
                 className="inline-block"
                 randomness={5.0}
               />

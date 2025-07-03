@@ -9,6 +9,9 @@
   --color-surface: #f5f5f5;
   --color-surface-dark: #262626;
   --color-border: #e5e5e5;
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
 }
 
 @layer base {
@@ -438,4 +441,25 @@ html {
 .card-3d-content {
   transform: translateZ(20px);
   transform-style: preserve-3d;
+}
+
+/* 日本語テキストの改行ルール */
+.jp-text {
+  word-break: keep-all;
+  overflow-wrap: break-word;
+  -webkit-line-break: strict;
+  line-break: strict;
+  text-align: center;
+}
+
+.jp-text-block {
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+@media (min-width: 768px) {
+  .jp-text-block {
+    white-space: nowrap;
+  }
 }
