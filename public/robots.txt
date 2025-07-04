@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://lumique-web.com/sitemap.xml
