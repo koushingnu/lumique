@@ -199,10 +199,10 @@ const Header = () => {
               <div className="text-center text-neutral-500">
                 <p className="text-sm mb-2">お問い合わせ</p>
                 <a
-                  href="mailto:koushin1022apple@gmail.com"
+                  href="mailto:lumique1022@gmail.com"
                   className="text-neutral-900 hover:text-neutral-600 transition-colors"
                 >
-                  koushin1022apple@gmail.com
+                  lumique1022@gmail.com
                 </a>
                 <p className="text-sm mt-4 mb-2">所在地</p>
                 <p className="text-neutral-900">東京都北区赤羽西6-16-4</p>
