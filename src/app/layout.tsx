@@ -28,6 +28,9 @@ export const metadata: Metadata = {
   title: "Lumique - Web Development & DX Support",
   description:
     "Professional web development and digital transformation support services by Lumique",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
