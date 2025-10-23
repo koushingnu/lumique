@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   description:
     "Professional web development and digital transformation support services by Lumique",
   icons: {
-    icon: "/favicon.png",
+    icon: "./favicon.png",
   },
 };
 
