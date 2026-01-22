@@ -21,3 +21,4 @@ const AnimatedTitle = () => {
 };
 
 export default AnimatedTitle;
+ 

@@ -57,7 +57,7 @@ export default function Home() {
                 className="inline-block"
                 randomness={0.8}
               />
-            </p>
+              </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
               <Link
                 href="/contact"
@@ -69,7 +69,7 @@ export default function Home() {
                   className="inline-block"
                   randomness={0.8}
                 />
-              </Link>
+                </Link>
               <Link
                 href="/works"
                 className="btn-outline hover-scale text-lg py-4 px-8"
@@ -79,7 +79,7 @@ export default function Home() {
                   baseDelay={0.4}
                   className="inline-block"
                   randomness={0.8}
-                />
+                  />
               </Link>
             </div>
           </div>
